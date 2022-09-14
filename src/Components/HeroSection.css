@@ -14,9 +14,17 @@ img {
 }
 .hero-container {
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  background-image: url('/public/images/FireworkBackground.JPG');
+  background-size: cover;
   height: 100vh;
   width: 100%;
-  
+}
+.hero-container2 {
+  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  background-image: url('/public/images/CityView.JPG');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 .hero-panel-hiding {
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
@@ -48,7 +56,7 @@ img {
 
 .hero-panel > p {
   margin-top: 8px;
-  color: #fff;
+  color: skyblue;
   font-size: 25px;
   font-family: monospace;
 }

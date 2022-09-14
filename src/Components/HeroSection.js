@@ -1,15 +1,23 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
+import { useState ,useEffect} from 'react';
 import './HeroSection.css';
 import './Button.css';
 
 function HeroSection() {
+  const [click, setClick] = useState(true);
+  
+  
+
+  useEffect(() => {
+    console.log('click is: ', click);
+  },[click]);
+
   return (
-    <div className='hero-container'>
-      
+    
+    <div className= {click? 'hero-container' : 'hero-container2'}>
       {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
-      <img src='./images/FireworkBackground.jpg'/>
+      {/* <img src='./images/FireworkBackground.jpg'/> */}
       {/* <div className='hero-panel-hiding'>
         <Button 
           buttonSize='btn--tiny'
@@ -19,7 +27,7 @@ function HeroSection() {
       </div>     */}
         <div className='hero-panel'>
           <h1>DoYoung Ha</h1>
-          <p>DYary</p>
+          <p onClick={()=> setClick((click) => !click)}>DYary</p>
           {/* <h2>Do young, Be young, stay young</h2> */}
           {/* <div className='hero-btns'>
             <Button

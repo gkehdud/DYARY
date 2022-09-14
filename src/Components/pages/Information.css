@@ -7,17 +7,31 @@
 }
 .info-img {
     object-fit: inherit;
-    width: 70%;
-    height: 70%;
+    display: flex;
+    width: 30%;
+    height: 30%;
     position: relative;
     z-index: -1;
 }
 .info-selfie {
+    background-image: url('/public/images/LitSelfie.jpg');
     object-fit: inherit;
     position: relative;
-    margin-left: 30px;
-    margin-right: 10px;
     z-index: -1;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.info-selfie2 {
+    background-image: url('/public/images/LitSelfie1.jpg');
+    object-fit: inherit;
+    position: relative;
+    z-index: -1;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 .text--center{
     text-align: center;
@@ -48,7 +62,7 @@
 } 
 .info-introduction{
     padding: 1rem 0 1rem 0;
-    width: 100%;
+    width: 98%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -57,16 +71,14 @@
     object-fit: contain;
 }
 .info-panel {
-/* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-height: 30vh;
-width: 80%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0);
-object-fit: contain;
-margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0);
+    object-fit: contain;
+    margin-bottom: 20px;
 }
 .info-panel > p1 {
     color: black;
@@ -98,20 +110,14 @@ margin-bottom: 20px;
     .info-introduction > h2 {
         font-size: 16px;
     }
-    .info-selfie {
-        width: 50%;
-        height: 50%;
-    }
     .info-panel > p1 {
       font-size: 13px;
     }
-    .info-col {
+    .info-introduction{
+        display: flex;
         flex-direction: column;
     }
-    .info-introduction{
-        height: 25vh;
-        width: 60%;
-        display: flex;
+    .info-col {
         flex-direction: column;
     }
   }
@@ -123,15 +129,12 @@ margin-bottom: 20px;
     .info-introduction > h2 {
         font-size: 16px;
     }
-    .info-selfie {
-        width: 50%;
-        height: 50%;
-    }
     .hero-panel > p1 {
       font-size: 13px;
     }
     .info-col {
         flex-direction: column;
     }
+
   }
   

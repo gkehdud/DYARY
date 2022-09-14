@@ -39,10 +39,10 @@ function Navbar() {
     <>
       <nav className={navbar ? 'navbar active' : 'navbar'}>
         <div className='navbar-container'>
-          {/* <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>
             <img src='./images/ChillSelfie.jpg' className='logo'
-            style={{width: 60, height: 60, borderRadius: 60/ 2}}/>
-          </Link> */}
+            style={{width: 50, height: 50, borderRadius: 50/ 2}}/>
+          </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>

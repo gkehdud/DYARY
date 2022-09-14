@@ -1,17 +1,23 @@
 import React from 'react'
 import '../../App.css'
 import './Information.css';
+import { useState ,useEffect} from 'react';
 
 export default function Information(){
+    const [click, setClick] = useState(false);
+    
+    useEffect(() => {
+        console.log('click is: ', click);
+      },[click]);
+
     return (
     <div>
-        <h1 className='information'>Welcome</h1>
+        <h1 className='information' >Welcome</h1>
         <section className='features_info'>
             <div className='information-container'>
-                <div className='info-introduction'>
+                <div className='info-introduction' onClick={()=> setClick((click) => !click)}> 
                     <div className='info-panel'>
-                        <img className='info-selfie' src='./images/LitSelfie2.jpg' 
-                        style={{width: 150, height: 150, borderRadius: 150/ 2}}/>
+                        <img className= {click? 'info-selfie' : 'info-selfie2'}/>
                         <h2>Hello,<br></br>I'm software engineer from korea and currently living in New York. </h2>
                     </div>
                 </div>
